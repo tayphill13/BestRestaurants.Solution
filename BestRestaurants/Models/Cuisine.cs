@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace BestRestaurants.Models
 {
@@ -10,6 +11,7 @@ namespace BestRestaurants.Models
     }
 
     public int CuisineId { get; set; }
+    [DisplayName("Type of Cuisine")]
     public string Name { get; set; }
     public virtual ICollection<Restaurant> Restaurants { get; set; }
   }
